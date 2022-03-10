@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo3.PNG" id="logo" width="200px">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Compra Todo lo que desees</h2>
+                                <p>Toda la tienda a $15</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría Comprar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>20,000 articulos en línea <br>
+                        Explora  la moda más reciente</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Diseñadores Expertos <br>
+                        Viste con distintos estilos</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Aceptamos todos los medios de Pago<br>
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-ropa" class="container">
+        <h1 id="encabezado" class="encabezado">TENDENCIAS 2022</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/camisa.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>CAMISA PARA HOMBRE</h4>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/conjunto.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CONJUNTO PARA DAMA</h4>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/casaca .png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CASACA PARA HOMBRE</h4>                            
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/casaca deportiva.png" class="imagen-ropa u-full-width">
+                    <div class="info-card">
+                        <h4>CASACA DEPORTIVA PARA HOMBRE</h4>                    
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/sweater1.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>SWEATER PARA HOMBRE</h4>                         
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/chompa.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CHOMPA PARA HOMBRE</h4>                         
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/chompa.png" class="imagen-ropa u-full-width">
+                    <div class="info-card">
+                        <h4>CHOMPA DE COLEECION</h4>                   
+                        <img src="img/estrellas.png">
+                        <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/sweater.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>SWEATER</h4>                        
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/conjunto.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CONJUNTO PARA DAMA</h4>                        
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/product1.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>ROPA DE VERANO</h4>                       
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/product2.png" class="imagen-ropa u-full-width">
+                            <div class="info-card">
+                                <h4>ROPA A TU MEDIDA</h4>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/product3.png" class="imagen-ropa u-full-width">
+                            <div class="info-card">
+                                <h4>100% ALGODON</h4>                            
+                                <img src="img/estrellas.png">
+                                <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
