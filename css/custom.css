@@ -2,34 +2,32 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: #f5f3f3
+    background-color: #f5f3f3;
+    overflow-x: hidden;
 }
 h1 {
     text-align: center;
 }
 h2 {
     font-size: 3rem;
+    font-weight: 500;
 }
 h4 {
     font-size: 16px;
     font-weight: 700;
 }
 header {
-    padding: 20px 0 0 0;
-    background: white;
+    padding: 18px 18px 10px 18px;
+    background: #010101;
     text-align: center;
 }
-@media (min-width: 750px) {
-    header {
-        text-align: left;
-    }
-}
+
 .borrar-curso {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -38,16 +36,32 @@ ul {
 }
 #hero {
     background-image:url(../img/clothes.jpg);
-    height: 350px;
+    height: 75vh;
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 #encabezado {
-    margin: 30px 0;
+    margin: 35px 0;
+    font-weight: 500;
+}
+.right-submenu{
+    text-align: right;
+}
+.right-submenu ul, .right-submenu li{
+    margin-bottom: 0;
 }
 .submenu {
     position: relative;
 }
-
+.submenu .fa-shopping-cart{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 2rem 1px;
+    cursor: pointer;
+}
 .submenu #carrito{
     display: none;
 }
@@ -58,7 +72,7 @@ ul {
 
     top:100%;
     z-index: 1;
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
@@ -68,11 +82,13 @@ ul {
     background-color: crimson;
     text-align: center;
     border-radius: 10px;
-    color: white;
+    color: #FFFFFF;
 }
 .contenido-hero {
-    margin-top: 80px;
-    color: white;
+    font-weight: 500;
+}
+.contenido-hero h2, .contenido-hero p {
+    color: #FFFFFF;
 }
 .contenido-hero form {
     position: relative;
@@ -101,55 +117,54 @@ ul {
 .barra {
     padding: 20px 0;
     background: #741d51; 
-    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); 
-    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); 
-    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); 
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 140%); 
+    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 140%); 
+    background: linear-gradient(to right, #741d51 0%,#e44e52 140%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); 
 }
-
+.button.button-primary{
+    background: #741d51; 
+    border: none; 
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 140%); 
+    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 140%); 
+    background: linear-gradient(to right, #741d51 0%,#e44e52 140%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); 
+}
+.button.button-primary:hover{
+    background: #741d51; 
+}
 .barra p {
     margin:0;
-    color: white;
+    color: #FFFFFF;
 }
 .icono {
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 60px;
-    background-size: 30px;
-    margin-bottom: 40px;
-    text-align: center;
+    display: flex;
 }
-@media (min-width: 750px) {
-    .icono {
-        margin-bottom:0;
-    }
+.icono .fa {
+    color: #FFFFFF;
+    font-size: 2.7rem;
+    width: 45px;
+    padding-right: 13px;
 }
-.icono1 {
-    background-image: url(../img/icono1.png);
-}
-.icono2 {
-    background-image: url(../img/icono2.png);
-}
-.icono3 {
-    background-image: url(../img/icono3.png);
-}
-
-#lista-cursos .row {
-    margin-bottom:20px;
+#lista-ropa {
+    padding-bottom: 80px;
 }
 .agregar-carrito {
     margin:10px 0;
 }
 
 .card {
-    text-align: center;
+    margin-bottom: 40px;
+    text-align: left;
     border: 1px solid #e1e1e1;
-    background: white;
+    background: #FFFFFF;
 }
-@media (min-width: 550px) {
-    .card {
-        text-align: left;
-    }
+
+.imagen-ropa {
+    height: 250px;
+    background: #FFFFFF;
+    object-fit: contain;
+    padding: 20px;
 }
 .info-card  {
     padding: 10px 20px;
@@ -169,14 +184,16 @@ ul {
     font-size: 22px;
 }
 
-
-.footer {
-    margin-top: 40px;
-    border-top:1px solid #aaa;;
-    padding-top: 40px;   
-}
-.footer .menu a{
-display: block;
-margin-bottom: 10px;
-text-decoration: none;
+@media (max-width: 769px) {
+    .logo-col {width: 70%;}
+    .right-submenu {width: 30%;}
+    .card {
+        text-align: center;
+    }    
+    .icono {
+        margin: 15px 0;
+    }
+    .icono .fa {
+        padding-right: 0;
+    }
 }
